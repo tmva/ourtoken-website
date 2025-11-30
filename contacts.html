@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact OUR Team</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 30px 0;
+        }
+        .contact-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .contact-icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .social-link {
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s;
+        }
+        .social-link:hover {
+            background: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>Contact Us</h1>
+        <p>Get in touch with the OUR Token team</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="roadmap.html">Roadmap</a>
+        <a href="tokenomics.html">Tokenomics</a>
+        <a href="team.html">Team</a>
+        <a href="contacts.html">Contacts</a>
+    </nav>
+
+    <section>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon">📧</div>
+                <h3>Email Us</h3>
+                <p>contact@ourtoken.com</p>
+                <p>We typically respond within 24 hours</p>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-icon">💬</div>
+                <h3>Join Community</h3>
+                <p>Connect with other OUR Token holders</p>
+                <p>Share ideas and get support</p>
+            </div>
+            
+            <div class="contact-card">
+                <div class="contact-icon">🌐</div>
+                <h3>Technical Support</h3>
+                <p>tech@ourtoken.com</p>
+                <p>For wallet and transaction issues</p>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Telegram</a>
+            <a href="#" class="social-link">GitHub</a>
+            <a href="#" class="social-link">Discord</a>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;">
+            <h3>Stellar Asset Information</h3>
+            <p><strong>Asset ID:</strong> [YOUR_ASSET_ID_HERE]</p>
+            <p><strong>Stellar Term:</strong> Coming soon to directory</p>
+        </div>
+    </section>
+</body>
+</html>

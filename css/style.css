@@ -1,0 +1,343 @@
+/* OUR Token Color Palette */
+:root {
+    --green: #2ecc71;
+    --light-green: #aaff00;
+    --red: #e74c3c;
+    --blue: #3498db;
+    --white: #ffffff;
+    --black: #2c3e50;
+}
+
+/* Modern CSS Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: var(--white);
+    color: var(--black);
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, var(--green), var(--blue));
+    color: var(--white);
+    padding: 50px 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+
+.header p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Navigation */
+nav {
+    background: var(--black);
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background: var(--green);
+    transform: translateY(-2px);
+}
+
+/* Sections */
+section {
+    margin: 40px 20px;
+    padding: 30px;
+    border-radius: 15px;
+    background: #f8f9fa;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+/* Typography */
+h1 {
+    color: var(--black);
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: var(--blue);
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+}
+
+h3 {
+    color: var(--green);
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* Roadmap Styles */
+.roadmap-phase {
+    border-left: 4px solid #2ecc71;
+    padding-left: 25px;
+    margin: 35px 0;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.completed {
+    border-left-color: #2ecc71;
+}
+
+.current {
+    border-left-color: #3498db;
+}
+
+.future {
+    border-left-color: #e74c3c;
+}
+
+.burn-highlight {
+    background: #fff3cd;
+    padding: 12px;
+    border-radius: 8px;
+    border-left: 4px solid #ffc107;
+    margin: 10px 0;
+}
+
+/* Tokenomics Grid */
+.tokenomics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    margin: 30px 0;
+}
+
+.token-card {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    border-left: 4px solid #2ecc71;
+    transition: transform 0.3s ease;
+}
+
+.token-card:hover {
+    transform: translateY(-5px);
+}
+
+.burn-card {
+    border-left-color: #e74c3c;
+    background: #fff5f5;
+}
+
+.distribution-chart {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 25px 0;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+/* Team Grid */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.team-member {
+    text-align: center;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.member-photo {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--green), var(--blue));
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Contact Styles */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.contact-card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 3px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-icon {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    padding: 12px 25px;
+    background: var(--blue);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+}
+
+.social-link:hover {
+    background: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .header {
+        padding: 30px 15px;
+    }
+    
+    .header h1 {
+        font-size: 2rem;
+    }
+    
+    nav {
+        padding: 15px;
+    }
+    
+    nav a {
+        display: inline-block;
+        margin: 5px;
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+    
+    section {
+        margin: 20px 10px;
+        padding: 20px;
+    }
+    
+    .tokenomics-grid,
+    .team-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .roadmap-phase {
+        padding: 20px;
+        margin: 25px 0;
+    }
+    
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .social-link {
+        width: 200px;
+        text-align: center;
+    }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #1a1a1a;
+        color: #ffffff;
+    }
+    
+    section,
+    .token-card,
+    .team-member,
+    .contact-card,
+    .distribution-chart {
+        background: #2d2d2d;
+        color: #ffffff;
+    }
+    
+    .roadmap-phase {
+        background: #2d2d2d;
+    }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
